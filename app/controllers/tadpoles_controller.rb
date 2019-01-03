@@ -2,7 +2,8 @@ class TadpolesController < ApplicationController
   before_action :set_tadpole, only: [:show, :edit, :update, :destroy, :metamorphose]
 
   def metamorphose
-
+    f = Frog.new(self.name, self.color, self.pond)
+    self.
   end
 
   def index
