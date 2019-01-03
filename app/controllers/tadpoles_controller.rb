@@ -3,7 +3,7 @@ class TadpolesController < ApplicationController
 
   def metamorphose
     f = Frog.new(self.name, self.color, self.pond)
-    @tadpole.destroy
+    Tadpole.destroy(@tadpole)
     redirect_to f
   end
 
