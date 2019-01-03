@@ -3,7 +3,7 @@ class TadpolesController < ApplicationController
 
   def metamorphose
     f = Frog.new(self.name, self.color, self.pond)
-    self.
+    self.destroy
   end
 
   def index
